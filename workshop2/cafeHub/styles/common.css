@@ -1,0 +1,57 @@
+:root {
+    --accentOn: 248, 223, 223;
+    --accentOff: rgba(255, 255, 255, 0.8);
+}
+
+
+/* reset default values for every element */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    background-color: #f7f5f5;
+}
+
+button,
+a {
+    font-family: 'Barlow', sans-serif;
+}
+
+h1 {
+    font-family: 'Inspiration', cursive;
+    color: #fff;
+    font-size: 6em;
+    font-weight: 100;
+}
+
+/* base css class */
+.base {
+    display: flex;
+    flex-direction: column;
+    /* height: 100%; */
+    gap: 4rem;
+    background-color: #f7f5f5;
+}
+
+
+@media only screen and (min-width: 1200px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-color:transparent;
+    }
+
+    .base {
+        width: 130ch;
+        /* margin-bottom: 8rem; */
+    }
+
+}
+
+

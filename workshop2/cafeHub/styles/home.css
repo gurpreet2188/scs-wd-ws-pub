@@ -1,0 +1,74 @@
+@import './common.css';
+@import './navmain.css';
+@import './posts.css';
+@import './footer.css';
+
+.siteSummary>h1 {
+    font-size: 2.5rem;
+    color: #000;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.siteSummary {
+    position: relative;
+    align-items: center;
+    justify-self: center;
+    width: 70%;
+    z-index: 2;
+    margin-bottom: 2rem;
+}
+
+.siteSummary>span {
+    display: inline-block;
+    position: absolute;
+    z-index: -2;
+    background-color: rgb(var(--accentOn));
+    width: 4.9rem;
+    height: 4.9rem;
+    border-radius: 1rem;
+    transform: rotate(45deg);
+}
+
+.siteSummary>:nth-child(2) {
+    top: -1rem;
+    left: -1rem;
+    transform: rotate(45deg);
+}
+
+.siteSummary>:nth-child(3) {
+    bottom: -1rem;
+    right: -0.5rem;
+    transform: rotate(45deg);
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .siteSummary>h1 {
+        font-size: 3.5rem;
+    }
+
+    .siteSummary>h1>span::after {
+        content: '\a';
+        white-space: pre;
+    }
+
+    .siteSummary>span {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .siteSummary>:nth-child(2) {
+        top: -1rem;
+        left: 10rem;
+    }
+
+    .siteSummary>:nth-child(3) {
+        bottom: 0rem;
+        right: 8rem;
+    }
+
+
+}
+

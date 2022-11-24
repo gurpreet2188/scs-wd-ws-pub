@@ -1,0 +1,214 @@
+.content,
+.contentCommon,
+.contentPosts,
+.contentPost {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main/Parent Class for Posts content */
+.content {
+    gap: 0rem;
+    padding: 0rem;
+    justify-content: space-between;
+}
+
+/* A common Class for Contents */
+.contentCommon {
+    gap: 2rem;
+    padding: 0rem;
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+    width: 100%;
+
+}
+
+.contentPosts {
+    gap: 13rem;
+}
+
+.contentTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+.contentTitle>:nth-child(1) {
+    font-size: 1.6rem;
+    font-weight: 200;
+    line-height: 0.2rem;
+    text-align: left;
+    letter-spacing: 1px;
+    align-self: flex-start;
+}
+
+.contentTitle>:nth-child(2) {
+    height: 0.6rem;
+    flex-grow: 1;
+    background-color: rgb(var(--accentOn));
+}
+
+
+/* A common Class for Content's Post */
+
+.contentPost {
+    gap: 0.6rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 12rem;
+}
+
+.postTitleCard {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: rgba(255, 255, 255, .85);
+    padding: 1.3rem 0.8rem;
+    margin: auto;
+    width: 85%;
+    height: fit-content;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 14rem;
+    transform: translateY(3rem);
+}
+
+.postTitle,
+.postSummary,
+.postMore {
+    color: #000;
+}
+
+.postTitle {
+    font-weight: 300;
+    letter-spacing: 2.5px;
+    margin-top: auto;
+    font-size: 24px;
+}
+
+.postSummary {
+    line-height: 1.5rem;
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+.postMoreButton {
+    align-self: flex-end;
+    justify-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.7;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--accentOff);
+    padding: 1rem;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    transition: background-color 1s;
+}
+
+.postMoreButton:active {
+    background-color: rgb(var(--accentOn));
+    border: 1px solid rgba(0, 0, 0, 0.0);
+    transition: background-color 0s;
+}
+
+.postMoreIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: auto;
+}
+
+.contentMore {
+    align-self: flex-end;
+
+}
+
+.contentMore>button {
+    font-size: 0.8rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    margin-right: 1rem;
+    padding: 0.5rem;
+    background-color: transparent;
+    border: 1px solid rgb(var(--accentOn));
+    border-radius: 0.2rem;
+    transition: background-color 1s;
+}
+
+.contentMore>button:active {
+    background-color: rgb(var(--accentOn));
+    transition: background-color 0s;
+}
+
+@media only screen and (min-width: 1200px) {
+    .content {
+        gap: 2rem;
+        padding: 0rem;
+    }
+
+    .contentTitle>:nth-child(1) {
+        font-size: 2rem;
+    }
+
+    .contentCommon {
+        gap: 4rem;
+    }
+
+    .contentPosts {
+        flex-direction: column;
+        margin-bottom: 0rem;
+        gap: 4rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .contentCommon {
+        gap: 2rem;
+        padding: 0rem;
+        font-size: 1.5rem;
+        margin-bottom: 0rem;
+        width: 100%;
+
+    }
+
+    .contentPost {
+        gap: 0.6rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 24rem;
+        width: 70%;
+        border-radius: 1rem;
+    }
+
+    .postTitleCard {
+        width: 60%;
+        min-height: 20rem;
+        gap: 3rem;
+        transform: translateY(-35%) translateX(105%);
+    }
+
+    .postTitle {
+        font-size: 3rem;
+    }
+
+    .postSummary {
+        line-height: 2rem;
+        font-weight: 300;
+        font-size: 1.5rem;
+    }
+
+    .contentMore>button {
+        font-size: 1.2rem;
+    }
+}

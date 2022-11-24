@@ -1,0 +1,56 @@
+@import './navmain.css';
+
+.navHero {
+    padding: 0rem;
+}
+.titleHero {
+    display: none;
+}
+.heroIMG {
+    width: 100%;
+    height: fit-content;
+    background-image: none;
+}
+.navMobileContainer {
+    height: 4rem;
+    width: 100%;
+    background-color: #aaa;
+    padding: 1rem;
+}
+
+.navMobileContainer>h1 {
+    font-size: 2.2rem;
+    letter-spacing: 4px;
+    color: #000;
+    text-align: left;
+}
+
+.navMobileBtn>span {
+    background-color: #000;
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .navHero {
+        padding: 0;
+        gap: 2rem;
+    }
+
+    .heroIMG {
+        height: 28rem;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url('../assets/hero.jpg');
+    }
+
+    .navMobileContainer {
+        display: none;
+    }
+
+    /* .navDesktop {
+        display: block;
+    } */
+
+    .titleHero {
+        display: flex;
+    }
+
+}
