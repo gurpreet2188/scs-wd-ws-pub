@@ -1,0 +1,57 @@
+:root {
+    --bgColor: #e1e1e1;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.child-div-1 {
+    order: 3;
+}
+
+.parent-div {
+    display: flex;
+    flex-direction: row;
+
+    background-color: var(--bgColor);
+    padding: 1rem;
+    gap: 2rem;
+}
+
+@media only screen and (max-width:400px) and (min-width:350px) {
+    .parent-div {
+        background-color: #fff;
+        flex-direction: column;
+    }
+
+    .child-div-1 {
+        order: 1;
+    }
+
+    .child-div-2 {
+        order: 2;
+    }
+
+    .child-div-3 {
+        order: 3;
+    }
+}
+
+.print {
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+@media print {
+    .print {
+        padding: 1rem;
+        background-color: #fff;
+        color: #333;
+    }
+}
