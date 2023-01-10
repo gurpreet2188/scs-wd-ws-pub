@@ -1,0 +1,13 @@
+1. Create function to calculate a sum of 2 or more vairbales and show it on HTML page.
+
+2. Create a array with 10 values and show the value of frist 5 values in HTML page.
+
+3. Create a button, when clicked, translate the same button to right side.
+
+4. A HTML page with a p tag and create a button to remove the p tag.
+
+5. Create a page with p tag and using JS update the text content of same tag.
+
+6. Using For loop add 1 to following array [1,2,3,4,5,6]
+    Expected output = [2,3,4,5,6,7]
+ 

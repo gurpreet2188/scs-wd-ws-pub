@@ -1,0 +1,38 @@
+.hamburger {
+    margin: auto;
+    height: 20px;
+    width: 20px;
+}
+
+.ham-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* padding: 1rem; */
+    background: transparent;
+    border: none;
+    border: 1px solid red;
+}
+
+.ham-btn > span {
+    height: 1rem;
+    width: 6rem;
+    background-color: black;
+    transition: all 0.2s ease-in-out;
+    
+}
+
+.ham-bar1-open {
+    transform-origin: center;
+    transform: rotate(45deg) translateY(1.4rem) translateX(1.4rem);
+}
+
+.ham-bar2-open {
+    opacity: 0;
+}
+
+.ham-bar3-open {
+    transform-origin: center;
+    transform: rotate(135deg) translateY(1.4rem) translateX(-1.4rem);
+}
+
